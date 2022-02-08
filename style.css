@@ -229,6 +229,23 @@ span.tabs-btn {
 button:focus {
   box-shadow: none !important;
 }
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./images/Vector.png);
+  transform: rotate(
+-180deg
+);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(./images/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
 footer {
   padding: 50px 0;
   background: #08050f;
