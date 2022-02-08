@@ -82,6 +82,7 @@ a.nav-trade {
   color: #fff;
   opacity: 1;
   font-size: 14px;
+  padding: 0 3px;
 }
 img.img-responsive.mx-auto {
   width: 100%;
@@ -344,6 +345,15 @@ a.fa.fa-twitter {
   }
   .tabs-span span {
     flex-direction: column;
-    text-align: center;
   }
+  .accordion-header {
+    margin-bottom: 0;
+    padding: 0 2px;
+}
+.tabs-span {
+  align-items: center;
+}
+span.mb-2 {
+  text-align: center;
+}
 }
