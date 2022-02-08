@@ -12,7 +12,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Test Task</title>
   </head>
@@ -36,29 +42,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">DEX</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NFTs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Wallets</a>
             </li>
           </ul>
           <form class="d-flex">
-            <a href="#">Trade Now</a>
+            <a href="#" class="nav-trade">Trade Now</a>
           </form>
         </div>
       </div>
     </nav>
-    <div class="banner ">
+    <div class="banner">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 banner-content">
+            <div class="back-button mb-4">
+              <a href="#" class="fa fa-chevron-left"></a>
+              <a href="#">Back</a>
+            </div>
             <div class="banner-top-content mb-4">
               <a class="lessions" href="#">3 Lessions</a>
               <a href="#">40 hours Video</a>
               <a href="#">Intermediate</a>
             </div>
             <h1 class="mb-4">Strategy & Information Architecture</h1>
-            <div class="video-banner"><i class="fa fa-play-circle"></i> Play Module</div>
+            <div class="video-banner">
+              <i class="fa fa-play-circle"></i> Play Module
+            </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <img
@@ -84,7 +105,7 @@
               aria-controls="pills-home"
               aria-selected="true"
             >
-              Home
+              lessions
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -98,7 +119,7 @@
               aria-controls="pills-profile"
               aria-selected="false"
             >
-              Profile
+              Information
             </button>
           </li>
         </ul>
@@ -120,7 +141,15 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                    <div class="tabs-span">
+                      <span class="heading"
+                        >Which Information you need to Gather ?</span
+                      >
+                      <span
+                        ><span>45 min</span>
+                        <span class="tabs-btn">Start</span></span
+                      >
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -130,15 +159,12 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    Whether your a complete beginner, new to Terra or a
+                    battle-hardened Crypto veteran, there is something to learn
+                    for everyone. In this lesson, we will explore what
+                    Cryptocurrency is and explore what real world problems it is
+                    solving. We will go back to the very beginning, to the
+                    founding of Bitcoin.
                   </div>
                 </div>
               </div>
@@ -152,7 +178,15 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Accordion Item #2
+                    <div class="tabs-span">
+                      <span class="heading"
+                        >What startegy you should follow ?</span
+                      >
+                      <span
+                        ><span>31/66 min completed</span>
+                        <span class="tabs-btn">Resume</span></span
+                      >
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -184,13 +218,59 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Accordion Item #3
+                    <div class="tabs-span">
+                      <span class="heading"
+                        >Why we need to follow this architecture ?</span
+                      >
+                      <span
+                        ><span>50 min</span>
+                        <span class="tabs-btn">Start</span></span
+                      >
+                    </div>
                   </button>
                 </h2>
                 <div
                   id="collapseThree"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <div class="tabs-span">
+                      <span class="heading">Advanced knowledge</span>
+                      <span
+                        ><span>33 min</span>
+                        <span class="tabs-btn">Start</span></span
+                      >
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
@@ -214,7 +294,7 @@
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
           >
-            <div class="nav-tabs-content">
+            <div class="nav-tabs-content mb-5">
               <h4>Introduction</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -255,44 +335,78 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-4">
             <div class="footer-content">
               <a href="#">
-                <img src="./images/logo.png" alt="footer-logo" />
+                <img class="mb-2" src="./images/footer.png" alt="footer-logo" />
               </a>
-
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur nobis, vero voluptatem facere possimus, numquam
-                officiis tempora deleniti ipsa similique at impedit enim
-                quibusdam rem labore corporis? Inventore, minus soluta.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
               </p>
+              <p>© Loop 2021 All Rights Reserved</p>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-2 col-sm-6 mb-4">
             <h3>Quik Links</h3>
-              <div class="footer-links">
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Features</a>
-                  <a href="#">How it Works</a>
-              </div>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Features</a>
+              <a href="#">How it Works</a>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 mb-4">
             <h3>Contact Info</h3>
-              <div class="footer-contact">
-                  <a href="#">info@loop.do</a>
-                  <a href="#">27th floor, Atrium Tower, Obarrio, Panama City, Republic of Panama</a>
-              </div>
+            <div class="footer-contact">
+              <a href="#">info@loop.do</a>
+              <a href="#"
+                >27th floor, Atrium Tower, Obarrio, Panama City, Republic of
+                Panama</a
+              >
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-              <div class="footer-card">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Secondary card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="footer-card">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="quote">
+                    <svg
+                      width="20"
+                      height="30"
+                      viewBox="0 0 25 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.2363 22.5292H3.925C4.135 10.2704 6.55 8.24919 14.0838 3.78669C14.95 3.26169 15.2388 2.15919 14.7138 1.26669C14.215 0.400439 13.0863 0.111689 12.22 0.636689C3.3475 5.88669 0.25 9.08919 0.25 24.3404L0.25 38.4892C0.25 42.9779 3.89875 46.6004 8.36125 46.6004H16.2363C20.8563 46.6004 24.3475 43.1092 24.3475 38.4892V30.6142C24.3475 26.0204 20.8563 22.5292 16.2363 22.5292Z"
+                        fill="#3A284C"
+                      />
+                    </svg>
+                    <svg
+                      width="20"
+                      height="30"
+                      viewBox="0 0 25 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.2363 22.5292H3.925C4.135 10.2704 6.55 8.24919 14.0838 3.78669C14.95 3.26169 15.2388 2.15919 14.7138 1.26669C14.215 0.400439 13.0863 0.111689 12.22 0.636689C3.3475 5.88669 0.25 9.08919 0.25 24.3404L0.25 38.4892C0.25 42.9779 3.89875 46.6004 8.36125 46.6004H16.2363C20.8563 46.6004 24.3475 43.1092 24.3475 38.4892V30.6142C24.3475 26.0204 20.8563 22.5292 16.2363 22.5292Z"
+                        fill="#3A284C"
+                      />
+                    </svg>
                   </div>
+                  <p class="card-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                  <div class="dot">
+                    <i class="fa fa-ellipsis-h"></i>
+                    <a href="#" class="fa fa-twitter"></a>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
