@@ -106,30 +106,50 @@ img.img-responsive.mx-auto {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 } */
-.video-banner {
-  position: relative;
-  border: 4px solid transparent;
-  border-radius: 16px;
-  max-width: 180px;
-  padding: 10px;
-  border-radius: 10px;
-  color: var(--color);
+.video-banner 
+{
+   padding: 0; 
+   display: inline-block;
+    border-radius:10px ; 
+    overflow: hidden;
+    max-width: 180px;
+    background:  linear-gradient(to left, #743ad5, #d53a9d);
+}
+.video-inner {
+   padding: 10px;
+   cursor: pointer;
+   font-size: 20px;
+   text-align: center;
+   background: rgba(8, 5, 15, 1) ;
+   display: block;
+   margin: 2px;
+   color: #fff;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+}
+span.tabs-btn {
+  padding: 0; 
+  display: inline-block;
+   border-radius:10px ; 
+   overflow: hidden;
+   max-width: 180px;
+   background:  linear-gradient(to left, #743ad5, #d53a9d);
+}
+span.btn-start {
+  margin: 0;
+  padding: 11px 30px;
   cursor: pointer;
   font-size: 20px;
   text-align: center;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-}
-
-.video-banner::after {
-  position: absolute;
-  top: -4px; bottom: -4px;
-  left: -4px; right: -4px;
-  background: linear-gradient(to left, #743ad5, #d53a9d);
-  content: '';
-  z-index: -1;
-  border-radius: 16px;
+  background: rgba(8, 5, 15, 1);
+  display: block;
+  margin: 1px;
+  color: #fff;
+  border-radius: 10px;
+  width: 100px;
 }
 .banner a {
   padding: 5px 20px;
@@ -246,6 +266,7 @@ button#pills-profile-tab {
   background: #1d1a23;
   font-size: 13px;
   line-height: 22px;
+  font-weight: 300;
   letter-spacing: -0.002em;
   font-family: "Inter", sans-serif;
 }
@@ -268,7 +289,7 @@ button#pills-profile-tab {
   padding: 0 15px;
 }
 .tabs-span span {
-  margin-left: 10px;
+  margin-left: 1px;
   display: flex;
   font-size: 14px;
   align-items: center;
@@ -285,7 +306,7 @@ span.mb-2.time {
   opacity: 0.5;
   font-size: 13px;
 }
-span.tabs-btn {
+/* span.tabs-btn {
   border: 1px solid;
   padding: 10px 10px;
   border-radius: 6px;
@@ -296,7 +317,7 @@ span.tabs-btn {
   border: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-}
+} */
 button:focus {
   box-shadow: none !important;
 }
