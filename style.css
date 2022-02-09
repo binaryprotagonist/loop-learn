@@ -152,7 +152,7 @@ span.btn-start {
   width: 100px;
 }
 .banner a {
-  padding: 5px 20px;
+  padding: 5px 17px;
   font-size: 14px;
   font-size: 12px;
   opacity: 0.66;
@@ -492,5 +492,11 @@ span.mb-2 {
 .nav-tabs-content {
   color: #fff;
   padding: 0 0px;
+}
+span.mb-2.time {
+  margin: 0 auto;
+}
+.accordion-button:not(.collapsed)::after {
+  bottom: 40px;
 }
 }
