@@ -51,7 +51,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
   background: linear-gradient(
     90deg,
     rgba(8, 5, 15, 1) 0%,
-    rgba(8, 5, 15, 1) 33%,
+    rgba(8, 5, 15, 0.94) 33%,
     rgba(8, 5, 15, 1) 49%
   );
   display: flex;
@@ -109,6 +109,32 @@ a.lessions {
   opacity: 1;
   text-transform: uppercase;
 }
+
+.progress {
+  display: flex;
+  height: 0.2rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #201B2C;
+  border-radius: 0.25rem;
+}
+.progress-bar {
+  color: #201B2C;
+  background-color: #D46DCF;
+  background: linear-gradient(
+    90deg,
+    rgba(75, 47, 124, 1) 0%,
+    rgba(212, 109, 207, 1) 33%,
+    rgba(212, 109, 207, 1) 49%
+  );
+}
+.progress:before {
+  content: "24%";
+  position: absolute;
+  left: 24%;
+  margin-top: -20px;
+  color: #fff;
+}
 .nav-tabs {
   border-bottom: none;
   background: #08050f;
@@ -116,6 +142,7 @@ a.lessions {
 }
 .nav-tabs-content {
   color: #fff;
+  padding: 0 140px;
 }
 .tabs-span {
   justify-content: space-between;
@@ -218,6 +245,12 @@ span.heading {
 :focus-visible {
   outline: none !important;
 }
+span.mb-2.time {
+  display: block;
+  margin-right: 20px;
+  opacity: 0.5;
+  font-size: 13px;
+}
 span.tabs-btn {
   border: 1px solid;
   padding: 10px 10px;
@@ -255,11 +288,17 @@ footer {
   color: #fff;
 }
 .footer-content p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.01em;
   max-width: 250px;
-  font-weight: 400;
+  font-weight: 100;
+}
+.footer-content .mb-2 {
+  margin-bottom: 0rem!important;
+  height: 34px;
+  position: relative;
+  top: -4px;
 }
 h3 {
   font-size: 20px;
@@ -275,20 +314,22 @@ h3 {
   max-width: 250px;
 }
 .footer-links a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 25px;
   display: flex;
   align-items: center;
   color: #ffffff;
   opacity: 0.8;
+  font-weight: 100;
 }
 .footer-contact a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 25px;
   display: flex;
   align-items: center;
   color: #ffffff;
   opacity: 0.8;
+  font-weight: 100;
 }
 footer .card {
   background: linear-gradient(
@@ -300,13 +341,14 @@ footer .card {
   border-radius: 12px;
 }
 p.card-text {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   display: flex;
   align-items: center;
   color: #ffffff;
   opacity: 0.8;
   margin-bottom: 10px;
+  font-weight: 100;
 }
 .quote {
   position: absolute;
@@ -324,6 +366,37 @@ a.fa.fa-twitter {
   border: 1px solid #55acee;
   padding: 7px;
   background: #55acee;
+}
+.footer-contact p {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+a.fa.fa-map-marker {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+i.fa.fa-envelope {
+  margin-right: 10px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.dots {
+  display: flex;  
+    align-items: center;
+
+}
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 25px;
+  margin-right: 10px;
+  background-color: #fff;
+  opacity: 0.7;
+}
+.pulse-dot-2{
+  opacity: 1;
 }
 @media (max-width: 1023px) {
   .navbar-toggler {
@@ -357,5 +430,9 @@ a.fa.fa-twitter {
 }
 span.mb-2 {
   text-align: center;
+}
+.nav-tabs-content {
+  color: #fff;
+  padding: 0 0px;
 }
 }

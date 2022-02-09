@@ -63,7 +63,7 @@
         </div>
       </div>
     </nav>
-    <div class="banner">
+    <div class="banner pb-5">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 banner-content">
@@ -72,8 +72,8 @@
               <a href="#">Back</a>
             </div>
             <div class="banner-top-content mb-4">
-              <a class="lessions" href="#">3 Lessions</a>
-              <a href="#">40 hours Video</a>
+              <a class="lessions" href="#">3 Lessons</a>
+              <a style="text-transform: lowercase;" href="#">40 hours Video</a>
               <a href="#">Intermediate</a>
             </div>
             <h1 class="mb-4">Strategy & Information Architecture</h1>
@@ -90,6 +90,10 @@
           </div>
         </div>
       </div>
+     
+    </div>
+    <div class="progress ">
+      <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <div class="nav-tabs">
       <div class="container">
@@ -105,7 +109,7 @@
               aria-controls="pills-home"
               aria-selected="true"
             >
-              lessions
+              lessons
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -146,7 +150,7 @@
                         >Which Information you need to Gather ?</span
                       >
                       <span
-                        ><span class="mb-2">45 min</span>
+                        ><span class="mb-2 time">45 min</span>
                         <span class="tabs-btn">Start</span></span
                       >
                     </div>
@@ -183,7 +187,7 @@
                         >What startegy you should follow ?</span
                       >
                       <span
-                        ><span class="mb-2">31/66 min completed</span>
+                        ><span class="mb-2 time">31/66 min completed</span>
                         <span class="tabs-btn">Resume</span></span
                       >
                     </div>
@@ -223,7 +227,7 @@
                         >Why we need to follow this architecture ?</span
                       >
                       <span
-                        ><span class="mb-2">50 min</span>
+                        ><span class="mb-2 time">50 min</span>
                         <span class="tabs-btn">Start</span></span
                       >
                     </div>
@@ -261,7 +265,7 @@
                     <div class="tabs-span">
                       <span class="heading">Advanced knowledge</span>
                       <span
-                        ><span class="mb-2">33 min</span>
+                        ><span class="mb-2 time">33 min</span>
                         <span class="tabs-btn">Start</span></span
                       >
                     </div>
@@ -297,35 +301,13 @@
             <div class="nav-tabs-content mb-5">
               <h4>Introduction</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus veritatis consequuntur tempore omnis suscipit
-                laudantium aperiam! Voluptatem necessitatibus ipsam consequuntur
-                qui sed sunt beatae quis similique est autem minima ab
-                exercitationem at dicta libero labore excepturi deserunt maxime
-                quasi, ad culpa voluptates pariatur? Numquam rerum nemo deserunt
-                architecto ullam. Voluptatum id nihil quos veniam impedit eaque
-                odio odit? Quae dolorem amet voluptatum eos odit, fuga corporis
-                illum accusamus esse consequatur nemo praesentium ab magnam sed,
-                animi vitae reprehenderit omnis rem iste soluta, enim ea.
-                Eligendi, sunt. Rerum, pariatur, sit dolor totam possimus vero
-                ullam, dolorum esse corrupti quibusdam debitis quia.
+                For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude. For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude.
               </p>
             </div>
             <div class="nav-tabs-content">
-              <h4>Detailed info</h4>
+              <h4 style="text-transform: none;">Detailed info</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quidem ut quaerat dolorem aliquam sint ipsam, vitae nesciunt
-                ullam rem nam praesentium itaque deleniti nemo aperiam. Dolorum
-                beatae assumenda possimus nesciunt corrupti officiis saepe iste
-                reiciendis dicta tenetur earum architecto ratione rem sed
-                accusamus cupiditate mollitia enim in pariatur, neque labore
-                libero. Iste ipsa totam pariatur tenetur facilis sed est
-                laudantium, quidem quia molestiae autem! Inventore explicabo
-                optio ea expedita, velit quis rerum nisi. Numquam veniam optio
-                ducimus explicabo soluta, odio, saepe dolores neque nostrum
-                labore autem a deserunt illo. Excepturi quia eum dolor dicta
-                necessitatibus similique quo minus quibusdam.
+                For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude. For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from the atmosphere and the athlete's performance will generally be better at high altitude.
               </p>
             </div>
           </div>
@@ -358,11 +340,16 @@
           <div class="col-md-3 col-sm-6 mb-4">
             <h3>Contact Info</h3>
             <div class="footer-contact">
-              <a href="#">info@loop.do</a>
-              <a href="#"
+              <p>
+              <i class="fa fa-envelope"></i>
+              <a href="#"></i>info@loop.do</a>
+            </p>
+              <p>
+              <a class="fa fa-map-marker"></a><a href="#"
                 >27th floor, Atrium Tower, Obarrio, Panama City, Republic of
                 Panama</a
               >
+            </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 mb-4">
@@ -401,7 +388,13 @@
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                   </p>
                   <div class="dot">
-                    <i class="fa fa-ellipsis-h"></i>
+                    <!-- <i class="fa fa-ellipsis-h"></i> -->
+                    <div class="dots">
+                    <div class="pulse-dot pulse-dot-1"></div>
+  <div class="pulse-dot pulse-dot-2"></div>
+  <div class="pulse-dot pulse-dot-3"> </div>
+  <div class="pulse-dot pulse-dot-3"> </div>
+</div>
                     <a href="#" class="fa fa-twitter"></a>
                   </div>
                 </div>
